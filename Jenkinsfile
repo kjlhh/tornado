@@ -1,22 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        parallel(
-          "test2": {
-            echo 'test2 done'
-            
-          },
-          "test3": {
-            echo 'test3 done'
-            
-          },
-          "test1": {
-            echo 'test1 done'
-            
-          }
-        )
+        echo 'test2 done'
       }
     }
     stage('check host') {
